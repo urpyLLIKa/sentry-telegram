@@ -22,7 +22,7 @@ setup(
     license='MIT',
     entry_points={
         'sentry.plugins': [
-            'sentry_telegram = sentry_telegram.plugin:TelegramNotificationsPlugin',
+            'sentry_telegram_app = sentry_telegram_app.plugin:TelegramNotificationsPlugin',
         ],
     },
     classifiers=[
@@ -33,7 +33,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Software Development :: Bug Tracking',
         'Topic :: Software Development :: Quality Assurance',
