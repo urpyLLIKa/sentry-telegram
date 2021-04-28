@@ -10,13 +10,13 @@ with open('README.rst', 'r') as f:
 
 
 setup(
-    name='sentry_telegram',
+    name='sentry_telegram_app',
     version=__version__,
-    packages=['sentry_telegram'],
-    url='https://github.com/butorov/sentry-telegram',
-    author='Viacheslav Butorov',
+    packages=['sentry_telegram_app'],
+    url='https://github.com/urpyLLIKa/sentry-telegram-app',
+    author='Dmitry Brazhnikov',
     author_email='butorovv@gmail.com',
-    description='Plugin for Sentry which allows sending notification via Telegram messenger.',
+    description='Fork. Plugin for Sentry which allows sending notification via Telegram messenger.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
     license='MIT',
