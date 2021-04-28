@@ -39,7 +39,7 @@ class TelegramNotificationsOptionsForm(notify.NotificationConfigurationForm):
 
 class TelegramNotificationsPlugin(notify.NotificationPlugin):
     title = 'Telegram Notifications'
-    slug = 'sentry_telegram'
+    slug = 'sentry_telegram_app'
     description = package_doc
     version = __version__
     author = 'Viacheslav Butorov'
@@ -49,12 +49,12 @@ class TelegramNotificationsPlugin(notify.NotificationPlugin):
         ('Source', 'https://github.com/butorov/sentry-telegram'),
     ]
 
-    conf_key = 'sentry_telegram'
+    conf_key = 'sentry_telegram_app'
     conf_title = title
 
     project_conf_form = TelegramNotificationsOptionsForm
 
-    logger = logging.getLogger('sentry.plugins.sentry_telegram')
+    logger = logging.getLogger('sentry.plugins.sentry_telegram_app')
 
     def is_configured(self, project, **kwargs):
         return bool(self.get_option('api_token', project) and self.get_option('receivers', project))

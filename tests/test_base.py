@@ -10,7 +10,7 @@ from sentry.testutils import PluginTestCase
 from sentry.utils.samples import create_sample_event
 
 
-from sentry_telegram.plugin import TelegramNotificationsPlugin
+from sentry_telegram_app.plugin import TelegramNotificationsPlugin
 
 
 sentry_version = V(sentry.__version__)
@@ -27,7 +27,7 @@ class BaseTest(PluginTestCase):
                             'http://testserver/baz/bar/issues/1/' % {'platform': self.get_platform_name_str()}
 
     def test_is_registered(self):
-        assert plugins.get('sentry_telegram').slug == self.plugin.slug
+        assert plugins.get('sentry_telegram_app').slug == self.plugin.slug
 
     def send_notification_helper(self):
         self.initialized_plugin.set_option('api_origin', 'https://api.telegram.org', self.project)

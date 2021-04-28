@@ -15,7 +15,7 @@ setup(
     packages=['sentry_telegram_app'],
     url='https://github.com/urpyLLIKa/sentry-telegram-app',
     author='Dmitry Brazhnikov',
-    author_email='butorovv@gmail.com',
+    author_email='todim@bk.ru',
     description='Fork. Plugin for Sentry which allows sending notification via Telegram messenger.',
     long_description=long_description,
     long_description_content_type='text/x-rst',
