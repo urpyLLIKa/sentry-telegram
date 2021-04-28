@@ -1,3 +1,5 @@
+This is FORK PROJECT FROM https://github.com/butorov/sentry-telegram
+
 Sentry Telegram |travis| |codecov| |pypi|
 =========================================
 
