@@ -38,15 +38,15 @@ class TelegramNotificationsOptionsForm(notify.NotificationConfigurationForm):
 
 
 class TelegramNotificationsPlugin(notify.NotificationPlugin):
-    title = 'Telegram Notifications'
+    title = 'Telegram Notifications App'
     slug = 'sentry_telegram_app'
     description = package_doc
     version = __version__
-    author = 'Viacheslav Butorov'
-    author_url = 'https://github.com/butorov/sentry-telegram'
+    author = 'Dmitry Brazhnikov'
+    author_url = 'https://github.com/urpyLLIKa/sentry-telegram-app/'
     resource_links = [
-        ('Bug Tracker', 'https://github.com/butorov/sentry-telegram/issues'),
-        ('Source', 'https://github.com/butorov/sentry-telegram'),
+        ('Bug Tracker', 'https://github.com/urpyLLIKa/sentry-telegram-app/issues'),
+        ('Source', 'https://github.com/urpyLLIKa/sentry-telegram-app'),
     ]
 
     conf_key = 'sentry_telegram_app'
